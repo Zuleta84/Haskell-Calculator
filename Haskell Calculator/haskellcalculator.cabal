@@ -1,10 +1,10 @@
-name:               webcalculator
+name:               Haskellcalculator
 version:            0.0.0
 cabal-version:      >= 1.8
 build-type:         Simple
 extra-source-files: routes
 
-executable          webcalculator
+executable          haskellcalculator
   main-is:          Main.hs
   other-modules:    Application
                     Foundation
