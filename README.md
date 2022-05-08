@@ -10,7 +10,7 @@ https://www.haskell.org/ghcup/
 To launch type the following into the terminal:
 
 ```
-> cd haskellCalculator
+> cd haskellcalculator
 > stack build
 > stack exec haskellcalculator
 ```
