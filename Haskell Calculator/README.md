@@ -4,6 +4,8 @@ A web calculator using RESTful API principles in a Haskell environment
 ## Initialising the calculator
 
 In order to setup this application you must have stack, yesod and cabal installed on your machine.
+I recomended to lachun this package from this weside:
+https://www.haskell.org/ghcup/
 
 To launch type the following into the terminal:
 
