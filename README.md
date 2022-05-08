@@ -1,7 +1,6 @@
 # Haskell-Calculator
 A web calculator with Haskell backend
-# Haskell-Calculator
-A web calculator using RESTful API principles in a Haskell environment
+
 
 ## how to initialize the calculator?
 
