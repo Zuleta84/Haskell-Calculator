@@ -8,9 +8,9 @@ In order to setup this application you must have stack, yesod and cabal installe
 To launch type the following into the terminal:
 
 ```
-> cd WebCalculator
+> cd haskellcalculator
 > stack build
-> stack exec webcalculator
+> stack exec haskellcalculator
 ```
 This will intialise the web application on ```localhost:3000```, and will default you to the / route.
 
