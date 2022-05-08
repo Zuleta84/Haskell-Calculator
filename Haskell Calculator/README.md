@@ -1,4 +1,4 @@
-# WebCalculator
+# Haskell-Calculator
 A web calculator using RESTful API principles in a Haskell environment
 
 ## Initialising the calculator
