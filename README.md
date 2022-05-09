@@ -1,4 +1,4 @@
 # Haskell Calculator
-A web calculator with Haskell backend
+A calculator with Haskell backend
 
 

@@ -7,7 +7,7 @@ import Yesod.Core
 import CalcStructure
 import Database.DBConnection (initialiseDB,insertRecord, getAllOperator)
 
-getMultiplyR :: Int -> Int -> Operation TypedContent
+getMultiplyR :: Int -> Int -> Handler TypedContent
 getMultiplyR x y = do
   liftIO (initialiseDB)
   liftIO (insertRecord c)
@@ -37,7 +37,7 @@ getMultiplyR x y = do
     z = x * y
     c = (Calculation x "*" y z)
 
-getAllMultiplyR :: Operation TypedContent
+getAllMultiplyR :: Handler TypedContent
 getAllMultiplyR = do
   calculations <- liftIO (getAllOperator "*")
   selectRep $ do

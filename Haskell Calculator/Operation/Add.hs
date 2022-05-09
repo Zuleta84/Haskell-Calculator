@@ -6,8 +6,9 @@ import Foundation
 import Yesod.Core
 import CalcStructure
 import Database.DBConnection (initialiseDB,insertRecord, getAllOperator)
+import Control.Exception (Handler)
 
-getAddR :: Int -> Int -> Operation TypedContent
+getAddR :: Int -> Int -> Handler TypedContent
 getAddR x y = do
   liftIO (insertRecord c)
   selectRep $ do
@@ -37,7 +38,7 @@ getAddR x y = do
     z = x + y
     c = (Calculation x "+" y z)
 
-getAllAddR :: Operation TypedContent
+getAllAddR :: Handler TypedContent
 getAllAddR = do
   liftIO (initialiseDB)
   calculations <- liftIO (getAllOperator "+")

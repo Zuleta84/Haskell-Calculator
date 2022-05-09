@@ -6,7 +6,7 @@ module Haskell Calculator.Operation.Home where
 import Foundation
 import Yesod.Core
 
-getHomeR :: Operation Html
+getHomeR :: Handler Html
 getHomeR = defaultLayout $ do
   setTitle "Haskell Calculator API"
   addStylesheetRemote "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
