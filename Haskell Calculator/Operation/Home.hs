@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
 {-# LANGUAGE TemplateHaskell   #-}
-module Home where
+module Haskell Calculator.Operation.Home where
 
 import Foundation
 import Yesod.Core

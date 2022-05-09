@@ -1,4 +1,4 @@
-import Application () -- for YesodDispatch instance
+import App () -- for YesodDispatch instance
 import Foundation
 import Yesod.Core
 import Yesod.Static

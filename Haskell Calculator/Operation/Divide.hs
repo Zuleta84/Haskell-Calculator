@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Handler.Divide where
+module Haskell Calculator.Operation.Divide where
 
 import Foundation
 import Yesod.Core

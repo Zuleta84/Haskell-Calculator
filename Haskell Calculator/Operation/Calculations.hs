@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Operation.Calculations where
+module Haskell Calculator.Operation.Calculations where
 
 import Foundation
 import Yesod
