@@ -1,13 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Handler.Subtract where
+module Operation.Subtract where
 
 import Foundation
 import Yesod.Core
 import CalcStructure
 import Database.DBConnection (initialiseDB,insertRecord, getAllOperator)
 
-getSubtractR :: Int -> Int -> Handler TypedContent
+getSubtractR :: Int -> Int -> Operation TypedContent
 getSubtractR x y = do
   liftIO (initialiseDB)
   liftIO (insertRecord c)
@@ -37,7 +37,7 @@ getSubtractR x y = do
     z = x - y
     c = (Calculation x "-" y z)
 
-getAllSubtractR :: Handler TypedContent
+getAllSubtractR :: Operation TypedContent
 getAllSubtractR = do
   calculations <- liftIO (getAllOperator "-")
   selectRep $ do

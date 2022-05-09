@@ -6,9 +6,9 @@ module Home where
 import Foundation
 import Yesod.Core
 
-getHomeR :: Handler Html
+getHomeR :: Operation Html
 getHomeR = defaultLayout $ do
-  setTitle "Haskell Web Calculator API"
+  setTitle "Haskell Calculator API"
   addStylesheetRemote "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   addStylesheetRemote "http://fonts.googleapis.com/css?family=Strait"
   addScript $ StaticR form_js

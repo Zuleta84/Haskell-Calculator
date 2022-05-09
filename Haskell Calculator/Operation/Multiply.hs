@@ -1,13 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Handler.Multiply where
+module Operation.Multiply where
 
 import Foundation
 import Yesod.Core
 import CalcStructure
 import Database.DBConnection (initialiseDB,insertRecord, getAllOperator)
 
-getMultiplyR :: Int -> Int -> Handler TypedContent
+getMultiplyR :: Int -> Int -> Operation TypedContent
 getMultiplyR x y = do
   liftIO (initialiseDB)
   liftIO (insertRecord c)
@@ -37,7 +37,7 @@ getMultiplyR x y = do
     z = x * y
     c = (Calculation x "*" y z)
 
-getAllMultiplyR :: Handler TypedContent
+getAllMultiplyR :: Operation TypedContent
 getAllMultiplyR = do
   calculations <- liftIO (getAllOperator "*")
   selectRep $ do
