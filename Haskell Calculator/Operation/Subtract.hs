@@ -7,7 +7,7 @@ import Yesod.Core
 import CalcStructure
 import Database.DBConnection (initialiseDB,insertRecord, getAllOperator)
 
-getSubtractR :: Int -> Int -> Operation TypedContent
+getSubtractR :: Int -> Int -> Handler TypedContent
 getSubtractR x y = do
   liftIO (initialiseDB)
   liftIO (insertRecord c)
