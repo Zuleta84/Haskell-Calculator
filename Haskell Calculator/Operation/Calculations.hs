@@ -1,13 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Handler.Calculations where
+module Operation.Calculations where
 
 import Foundation
 import Yesod
 import Database.DBConnection
 import CalcStructure
 
-getCalculationsR :: Handler TypedContent
+getCalculationsR :: Operation TypedContent
 getCalculationsR = do
   liftIO (initialiseDB)
   calculations <- liftIO (getRecords)

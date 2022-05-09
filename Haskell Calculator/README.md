@@ -21,4 +21,4 @@ They are all used by providing the name of the operator.
 
 ### HTML & JSON
 The API allows requests for both HTML and JSON, by default it will return HTML. In order to receive JSON instead add `?_accept=application/json` to the URL. 
-For instance if you wish to have your addition in JSON, you would go to:
+

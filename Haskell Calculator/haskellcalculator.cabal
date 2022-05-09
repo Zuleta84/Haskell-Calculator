@@ -10,12 +10,12 @@ executable          haskellcalculator
                     Foundation
                     CalcStructure
                     Database.DBConnection
-                    Handler.Add
-                    Handler.Subtract
-                    Handler.Multiply
-                    Handler.Divide
-                    Handler.Home
-                    Handler.Calculations
+                    Operation.Add
+                    Operation.Subtract
+                    Operation.Multiply
+                    Operation.Divide
+                    Operation.Home
+                    Operation.Calculations
 
   ghc-options:      -Wall -fwarn-tabs -O2
 
