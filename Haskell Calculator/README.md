@@ -1,18 +1,13 @@
 # Haskell-Calculator
-A web calculator using RESTful API principles in a Haskell environment
+A Calculator with a backend using haskell. You need to install https://www.haskell.org/ghcup/ 
 
-## Initialising the calculator
-
-In order to setup this application you must have stack, yesod and cabal installed on your machine.
-
-To launch type the following into the terminal:
-
+in the terminal write:
 ```
 > cd haskellcalculator
 > stack build
 > stack exec haskellcalculator
 ```
-This will intialise the web application on ```localhost:3000```, and will default you to the / route.
+This will intialise the web application on ```localhost:8080```, and will default you to the / route.
 
 ## Using the Calculator
 ### Operations

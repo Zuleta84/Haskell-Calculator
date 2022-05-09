@@ -28,7 +28,7 @@ function setup(){
         throw new Error("Invalid Operator");
       }
     console.log("submission complete");
-    window.location.assign("http://localhost:3000"+route);
+    window.location.assign("http://localhost:8080"+route);
     return false;
   }
 
