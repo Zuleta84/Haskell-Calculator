@@ -2,6 +2,7 @@
 A web calculator with Haskell backend
 
 
+<<<<<<< HEAD
 ## how to initialize the calculator?
 
 You nedd to install the followoing package for to initialize the aplication.
@@ -21,3 +22,5 @@ They are all used by providing the name of the operator, followed by two integer
 /add/Int/Int 
 ```
 
+=======
+>>>>>>> aca125d67d8c1c8bb8c1a07a2f400e90050b971e
