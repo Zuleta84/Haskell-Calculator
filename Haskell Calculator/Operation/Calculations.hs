@@ -7,7 +7,7 @@ import Yesod
 import Database.DBConnection
 import CalcStructure
 
-getCalculationsR :: Operation TypedContent
+getCalculationsR :: Handler TypedContent
 getCalculationsR = do
   liftIO (initialiseDB)
   calculations <- liftIO (getRecords)
